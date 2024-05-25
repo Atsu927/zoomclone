@@ -1,2 +1,2 @@
 # ZoomClone
-A Zoom Cole Fullstack project
+A Zoom Clone Fullstack project
