@@ -28,4 +28,4 @@ export const sidebarLinks = [
         route: '/personal-room',
         imgUrl: '/icons/add-personal.svg',
     },
-];
+]
