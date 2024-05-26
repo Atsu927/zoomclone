@@ -10,6 +10,15 @@ interface HomeCardProps {
     handleClick: () => void
 }
 
+/**
+ * Represents a home card component.
+ * @param {string} className - The CSS class name for the component.
+ * @param {string} img - The image source for the card.
+ * @param {string} title - The title of the card.
+ * @param {string} description - The description of the card.
+ * @param {Function} handleClick - The click event handler for the card.
+ * @returns {JSX.Element} The rendered home card component.
+ */
 const HomeCard = ({
     className,
     img,

@@ -32,7 +32,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
             <MeetingTypeList />
         </section>
     )
