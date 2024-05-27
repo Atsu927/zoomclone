@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 import MeetingModal from './MeetingModal'
 import { useUser } from '@clerk/nextjs'
 import { Call, useStreamVideoClient } from '@stream-io/video-react-sdk'
+import { useToast } from '@/components/ui/use-toast'
 
 /**
  * Renders a list of meeting types with corresponding actions.
@@ -31,10 +32,16 @@ const MeetingTypeList = () => {
 
     const [callDetails, setCallDetails] = useState<Call>()
 
+    const { toast } = useToast()
+
     const createMeeting = async () => {
         if (!client || !user) return
 
         try {
+            if (!values.dateTime) {
+                toast({ title: 'Please select a date and a time' })
+                return
+            }
             const id = crypto.randomUUID()
             const call = client.call('default', id)
             if (!call) throw new Error('Failed to create meeting')
@@ -54,8 +61,11 @@ const MeetingTypeList = () => {
             if (!values.description) {
                 router.push(`/meeting/${call.id}`)
             }
+
+            toast({ title: 'Meeting created' })
         } catch (error) {
             console.log(error)
+            toast({ title: 'Failed to create meeting' })
         }
     }
 
