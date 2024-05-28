@@ -22,6 +22,8 @@ const config = {
                 dark: {
                     1: '#1C1F2E',
                     2: '#161925',
+                    3: '#252A41',
+                    4: '#1E2757',
                 },
                 blue: {
                     1: '#0E78F9',
@@ -41,9 +43,6 @@ const config = {
                     1: '#F9A90E',
                 },
             },
-            backgroundImage: {
-                hero: "url('/images/hero-background.png')",
-            },
             keyframes: {
                 'accordion-down': {
                     from: { height: '0' },
@@ -57,6 +56,9 @@ const config = {
             animation: {
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
+            },
+            backgroundImage: {
+                hero: "url('/images/hero-background.png')",
             },
         },
     },
