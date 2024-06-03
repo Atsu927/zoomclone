@@ -73,5 +73,5 @@ Enjoy your enhanced Google Meet experience with Google Meets Who?!
 
 For any inquiries or feedback, please feel free to reach out to us:
 
-- Email: [contact@example.com](aeron.christler.avenido@gmail.com)
-- GitHub: [github.com/example](https://github.com/Atsu927)
+- Email: [aeron.christler.avenido@gmail.com](aeron.christler.avenido@gmail.com)
+- GitHub: [https://github.com/Atsu927](https://github.com/Atsu927)
